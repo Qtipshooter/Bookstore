@@ -17,7 +17,7 @@ export default async function Login() {
         <div>User Name label</div>
         <div>email</div>
         <div>email label</div>
-        <input type="text">password</input>
+        <input type="text"></input>
         <div>password label</div>
         <div>confirm password</div>
         <div>confirm password label</div>
