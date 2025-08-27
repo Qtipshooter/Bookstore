@@ -1,7 +1,7 @@
-import BookTile from "@/components/booktile";
+import BookTile from "@/components/book-tile";
 import Image from "next/image";
 
-export default function Home() {
+export default async function Home() {
   return (
     <div>
       <div className="h-[80vh] bg-cover bg-center bg-white/60 bg-[url(/images/books.jpeg)] bg-blend-overlay bg-opacity-5 text-primary-bg-text text-center">
