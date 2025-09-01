@@ -1,28 +1,20 @@
 import TextField from "@/components/textfield";
+import Form from "next/form";
 
 export default async function Login() {
+  
   return(
     <div className="flex justify-evenly mx-[10vw] h-[80vh]">
-      <div className="mt-16">
-        <div>Login Label</div>
-        <TextField className="" label="Username or Email" placeholder="Username" type="default"></TextField>
-        <TextField className="" label="Password" type="default"></TextField>
-        <div>forgot Password button</div>
-        <div>Login Button</div>
-      </div>
-      <div className="border"></div>
-      <div className="mt-16">
-        <div>Signup Label</div>
-        <div>User Name</div>
-        <div>User Name label</div>
-        <div>email</div>
-        <div>email label</div>
-        <input type="text"></input>
-        <div>password label</div>
-        <div>confirm password</div>
-        <div>confirm password label</div>
-        <div>Signup</div>
-      </div>
+      <Form className="mt-16 flex flex-col gap-2" action="/signup-post">
+        <div className="text-5xl border-b-3 pb-2">Signup</div>
+        <TextField id="signup-user" type="" placeholder="" label="Username" autofocus/>
+        <TextField id="signup-email" type="" placeholder="" label="Email Address"/>
+        <TextField id="signup-password" type="password" placeholder="" label="Password"/>
+        <TextField id="signup-verify-password" type="password" placeholder="" label="Verify Password"/>
+        <TextField></TextField>
+        
+        <button type="submit" className="bg-white/60 px-2 py-1 border-4 border-double rounded-lg mx-auto">Signup</button>
+      </Form>
     </div>
   );
 }
