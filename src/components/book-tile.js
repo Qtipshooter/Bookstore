@@ -10,7 +10,7 @@ export default async function BookTile(props) {
   genre = props.genre;
   author = props.author;
   src = props.src ? props.src : `/images/bookcovers/missing.png`;
-  img = <Image src={src} style={{ width: 'auto', height: '20rem' }}  width={0} height={0} alt={`Cover of "${title}"`}></Image>
+  img = <Image src={src} style={{ width: 'auto', height: '20rem' }}  width={500} height={500} alt={`Cover of "${title}"`}></Image>
 
   //tile construct
   return(
