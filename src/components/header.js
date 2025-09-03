@@ -6,7 +6,7 @@ export default async function Header(){
       <Link href="/" className="flex block h-full from-primary-bg from-80% bg-gradient-to-r pl-4">
         <div className="m-auto text-6xl pr-12">Bookstore</div>
       </Link>
-      <Link href="/login" className="flex block mr-16">
+      <Link href="/signup" className="flex block mr-16">
         <div className="m-auto text-2xl p-2 border-2 rounded-lg underline">Signup/Sign In</div>
       </Link>
       
